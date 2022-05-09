@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+:root {
+    --color1:#230836;
+    --color2:#73777B;
+    --color3:#d47011;
+    --color4:#F1EEE9;
+    --color5:#ffffff;
+}
+
+body {
+    background-color: var(--color5) ;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: var(--color1);
+    text-align: center;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 1rem ;
+    font-size: 1.1rem;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--color5);
+}
+/* SECION 1 */
+
+.presentacion{
+    display: flex;
+    height: 100vh;
+    
+}
+
+.fotoperfil {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(150deg , #ffffff 50% , #230836 50%) ;
+}
+
+.saludopadre {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+}
+
+.saludo p {
+    text-align: center;
+    color: var(--color4);
+    font-size: 1.7rem;
+}
+
+.fotoperfil > img {
+    width: 20rem;
+    height: 20rem;
+    /* background-color: var(--color1); */
+    display: block;
+    margin: auto;
+
+    
+}
+
+.saludo img {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+
+    animation-name: flecha;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flecha {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 50%;
+    }
+}
+
+.saludo img:active{
+    transform: scale(0.8);
+}
+
+
+/* SECTION 2 */
+
+.tecnologiaspadre {
+    background-color: var(--color5);
+    height: auto;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tecnologias div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+.tecnologias h4 {
+    color: var(--color1);
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.tecnologias div >img {
+    margin: 0 2rem;
+    width: 75px;
+}
+
+/* SECTION 3 */
+
+.proyectospadre{
+    background-color: var(--color5);
+    padding: 5rem;
+}
+
+.proyectoshijo h4 {
+    color: var(--color1);
+    text-align: center;
+    font-size: 1.7rem;
+
+}
+
+.grid-proyectos {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.proyectos {
+    background-color: #d47011;
+    width: 23%;
+    height: 20rem;
+    margin: 5px;
+    border-radius: 12px;
+}
+
+
+.proyectos h5 {
+    text-align: center;
+    color: var(--color5);
+    background-color: var(--color1);
+    width: cover;
+    padding: 1rem;
+}
+
+#proyecto1 {
+    background-image: url("./Captura\ de\ pantalla\ 2022-05-09\ 103847.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+
+    header li  {
+        margin: 3px;
+    }
+
+    .tecnologias div >img {
+        margin: 0 1rem;
+        width: 50px;
+    }
+    
+    .proyectos {
+        background-color: #d47011;
+        width: 40%;
+        height: 10rem;
+        margin: 5px;
+        border-radius: 12px;
+    }
+    .grid-proyectos {
+        margin: 5px;
+    }
+    .proyectospadre{
+        background-color: var(--color5);
+        padding: 10px;
+    }
+}
+
