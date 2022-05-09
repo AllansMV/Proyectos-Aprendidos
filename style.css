@@ -5,7 +5,7 @@
 }
 
 :root {
-    --color1:#230836;
+    --color1:#0e166d;
     --color2:#73777B;
     --color3:#d47011;
     --color4:#F1EEE9;
@@ -40,7 +40,7 @@ li a {
 
 .presentacion{
     display: flex;
-    height: 100vh;
+    height: 90vh;
     
 }
 
@@ -49,7 +49,7 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:linear-gradient(150deg , #ffffff 50% , #230836 50%) ;
+    background-image:linear-gradient(200deg, var(--color1) 50% , var(--color3) 50% );
 }
 
 .saludopadre {
@@ -163,7 +163,7 @@ li a {
 }
 
 
-.proyectos h5 {
+.proyectos h3 {
     text-align: center;
     color: var(--color5);
     background-color: var(--color1);
@@ -172,17 +172,64 @@ li a {
 }
 
 #proyecto1 {
+    background-image: url("./Panadería.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#proyecto2 {
+    background-image: url("./Quiche\ .jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#proyecto3 {
     background-image: url("./Captura\ de\ pantalla\ 2022-05-09\ 103847.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+
+
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
     header li  {
         margin: 3px;
     }
 
+    .presentacion {
+        display: block;
+        width: auto;
+    }
+
+    .fotoperfil {
+        width: 100%;
+        height: 40%;
+        background-image:linear-gradient(200deg, var(--color3) 50% , var(--color1) 50% );
+    }
+
+    .fotoperfil > img {
+        width: 10rem;
+        height: 10rem;
+        display: block;
+        margin: auto;
+    }
+
+    .saludopadre {
+        width: 100%;
+        height: 40%;
+    }
+
+    .saludo p {
+        font-size: 1rem;
+    }
+    .tecnologiaspadre {
+        padding: 0;
+        margin: 0 0 100px;
+    }
     .tecnologias div >img {
         margin: 0 1rem;
         width: 50px;
